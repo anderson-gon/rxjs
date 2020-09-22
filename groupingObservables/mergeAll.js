@@ -9,6 +9,6 @@ const source2 = of(4, 5, 6, 7, 8).pipe(delay(5));
 
 of(source1, source2)
     .pipe(
-        mergeAll(1)
+        mergeAll()
     )
     .subscribe(x => console.log(x));
